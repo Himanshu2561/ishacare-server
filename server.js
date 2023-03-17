@@ -14,6 +14,7 @@ app.use(cors())
 
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/private', require('./routes/private'))
+app.use('/api/forum', require('./routes/forum'))
 
 //Error Handlers (Should be the last pice of middleware)
 app.use(errorHandler)
